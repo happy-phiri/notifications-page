@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS STYLESHEET -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <main class="notifications">
+      <!-- HEADER -->
+      <div class="notifications-header">
+        <div class="count">
+          <h1>Notifications <span class="unread-count"></span></h1>
+        </div>
+
+        <button class="mark-btn">Mark all as read</button>
+      </div>
+
+      <!-- NOTIFICATIONS CONTAINER -->
+      <div class="notifications-container">
+        <div class="card unread">
+          <img src="/assets/images/avatar-mark-webber.webp" alt="mark webber" class="avatar">
+          <div class="message">
+            <p><a href="#"><span class="name">Mark Webber</span></a> reacted to your recent post <a href="#"><span class="post">My first tournament today!</span></a></p>
+            <p class="post-time">1m ago</p>
+          </div>
+        </div>
+
+        <div class="card unread">
+          <img src="/assets/images/avatar-angela-gray.webp" alt="angela gray" class="avatar">
+          <div class="message">
+            <p><a href="#"><span class="name">Angela Gray</span></a> followed you</p>
+            <p class="post-time">5m ago</p>
+          </div>
+        </div>
+
+        <div class="card unread">
+          <img src="/assets/images/avatar-jacob-thompson.webp" alt="" class="avatar">
+          <div class="message">
+            <p><a href="#"><span class="name">Jacob Thompson</span></a> has joined your group <a href="#"><span class="group">Chess Club</span></a></p>
+            <p class="post-time">1 day ago</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="" class="avatar">
+          <div class="message">
+            <p><a href="#"><span class="name">Rizky Hasanuddin</span></a> sent you a private message </p>
+            <p class="post-time">5 days ago</p>
+            <div class="private-message">
+              <p>
+                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                I'm already having lots of fun and improving my game.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/avatar-kimberly-smith.webp" alt="" class="avatar">
+          <div class="message">
+            <p><a href="#"><span class="name">Kimberly Smith</span></a> commented on your picture </p>
+            <p class="post-time">1 week ago</p>
+          </div>
+          <img src="/assets/images/image-chess.webp" alt="" class="comment-img">
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/avatar-nathan-peterson.webp" alt="" class="avatar">
+          <div class="message">
+            <p><a href="#"><span class="name">Nathan Peterson</span></a> reacted to your recent post <a href="#"><span
+                  class="post">5 end-game strategies to increase your win rate</span></a></p>
+            <p class="post-time">2 weeks ago</p>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="/assets/images/avatar-anna-kim.webp" alt="" class="avatar">
+          <div class="message">
+            <p><a href="#"><span class="name">Anna Kim</span></a> left the group <a href="#"><span class="group">Chess Club</span></a></p>
+            <p class="post-time">2 weeks ago</p>
+          </div>
+        </div>
+    </div>
+  </main>
+  </div>
+  <script src="/index.js" type="module"></script>
+</body>
+</html>
