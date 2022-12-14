@@ -35,6 +35,13 @@ container.addEventListener("click", (e) => {
   ) {
     e.target.classList.remove("unread");
     numberOfUnreadMessages--;
+  } else if (
+    e.target.classList.contains("card") &&
+    !e.target.classList.contains("unread")
+  ) {
+    e.target.classList.add("unread");
+    numberOfUnreadMessages++;
+    markAsRead.textContent = "Mark all as read";
   }
   if (numberOfUnreadMessages === 0) {
     markAsRead.textContent = "All messages read";
