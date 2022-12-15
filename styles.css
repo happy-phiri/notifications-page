@@ -173,6 +173,10 @@ h1 {
     background: var(--neutral-light-grayish-blue-3);
 }
 
+.card:hover {
+    background-color: var(--neutral-light-grayish-blue-1);
+}
+
 /* MEDIA QUERRY */
 @media screen and (max-width: 425px) {
     .container {

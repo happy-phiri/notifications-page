@@ -29,22 +29,25 @@ markAsRead.addEventListener("click", () => {
 messagesCounter();
 
 container.addEventListener("click", (e) => {
-  if (
-    e.target.classList.contains("card") &&
-    e.target.classList.contains("unread")
-  ) {
-    e.target.classList.remove("unread");
-    numberOfUnreadMessages--;
-  } else if (
-    e.target.classList.contains("card") &&
-    !e.target.classList.contains("unread")
-  ) {
-    e.target.classList.add("unread");
-    numberOfUnreadMessages++;
-    markAsRead.textContent = "Mark all as read";
-  }
-  if (numberOfUnreadMessages === 0) {
-    markAsRead.textContent = "All messages read";
+  for (const notification of notifications) {
+    if (
+      e.target === notification &&
+      notification.classList.contains("unread")
+    ) {
+      notification.classList.remove("unread");
+      numberOfUnreadMessages--;
+      console.log("yes");
+    } else if (
+      e.target === notification &&
+      !notification.classList.contains("unread")
+    ) {
+      notification.classList.add("unread");
+      numberOfUnreadMessages++;
+      markAsRead.textContent = "Mark all as read";
+    }
+    if (numberOfUnreadMessages === 0) {
+      markAsRead.textContent = "All messages read";
+    }
   }
   unreadCount.textContent = numberOfUnreadMessages;
 });
